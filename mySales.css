@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #FFF;
+    --black: #000;
+    --green: #3fffa3;
+  
+    --dark-900:#0A3A79;
+    --dark-700:#1C4379;
+  
+    --grey-100: #D1D1D1;
+    --beige-500: #8D760F;
+    --red-900: #FF3F4B;
+}
+
+body{
+    background: var(--dark-900);
+}
+
+body, input, textarea, select, button{
+    font: 400 1rem sans-serif;
+}
+
+#headerContainer{
+    height: 4rem;
+    background-color: var(--dark-700);
+}
+
+#headerContent{
+    max-width: 1120px;
+    height: 4rem;
+    margin: 0 auto;
+    padding: 0 2 rem;
+
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+a{
+    color: var(--white);
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+button{
+    margin-left: 3rem ;
+    background:transparent;
+    border: 0;
+    color: var(--white);
+
+}
+
+#navContainer{
+    height: 44rem;
+    width: 20rem;
+    float: left;
+    background: var(--white);
+}
+
+#navContainer a{
+    color: var(--black);
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#buttonNavContainer{
+    display: block;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 19rem auto  0 auto;
+    background:var(--beige-500);
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+#buttonNavContainer a{
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+}
+
+/*CSS do Conteudo*/
+#container{
+    max-width: 720px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#container h1{
+    color: var(--white);
+}
+
+#containerHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerHeader button{
+    background-color: transparent;
+    border: 0;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+#listOrders{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+#orderItem{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-700);
+    margin-bottom: 1rem;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+
+#orderItem div{
+    border: 0;
+    background: transparent;
+    font-size: 1.2rem;
+    color: var(--white);
+    height: 120px;
+    align-items: center;
+    display: flex;
+}
+
+#tag{
+    width: 9px;
+    background-color: var(--green);
+    height: 120px;
+    border-radius: 0.3rem 0 0 0.3rem;
+    margin-right: 1rem;
+}
+
+#botaoD{
+    background-color:var(--red-900);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#botaoA{
+    background-color: var(--green);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#emptyList{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+/*Media*/
+@media (max-width: 720px){
+    html{
+      font-size: 87.5%;
+    }
+  }
+  
+  @media (max-width: 1080px){
+    html{
+      font-size: 93.75%;
+    }
+  }
+  
